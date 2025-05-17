@@ -43,4 +43,4 @@ jobs:
 
     - name: Deploy to AKS
       run: |
-        kubectl set image deployment/webapp webapp=$AZURE_CONTAINER_REGISTRY/$IMAGE_NAME:${{ github.sha }}
+        kubectl set image deployment/webapp nginx=$AZURE_CONTAINER_REGISTRY/$IMAGE_NAME:${{ github.sha }}
