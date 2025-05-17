@@ -39,7 +39,7 @@ jobs:
       uses: azure/aks-set-context@v3
       with:
         resource-group: rg-aks-lab
-        cluster-name: acrlabk8s
+        cluster-name: aks-lab-cluster
 
     - name: Deploy to AKS
       run: |
